@@ -28,12 +28,13 @@ var i = 0;
 while(true) {
    if (i >= animals.length){
   break;
-}　else if (answer == 'ライオン') {
- alert('ライオン'); //課題５
+}　else if (answer == animals[i]) {
+ alert(i);
  break;
 } alert(animals[i]);
   i++;
 }
+
 
 
 //課題６
@@ -42,9 +43,11 @@ var animals = [
   {'name':'ライオン','weight':'200'},
   {'name':'キリン','weight':'300'}
 ];
+var animal = prompt('パンダ・ライオン・キリンのいずれかを入力してください');
 for (var i =0; i < animals.length; i++){
-
-alert(animals[i].weight); //課題７
+  if ( animal == animals[i].name ) {
+     alert(animals[i].weight); //課題７
+  }
 }
 
 //課題８
