@@ -1,0 +1,39 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- デフォルトのテーマ  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.4.3/flatpickr.css">
+</head>
+<body>
+  <h1>jQueryのデートピッカープラグイン</h1>
+
+<!--
+  <div class="flatpickr input-group" data-wrap="true" data-clickOpens="false">
+  <input type="text" id="date_picker" class="form-control"  data-altinput=true data-input >
+  <a class="input-group-addon" data-toggle><i class='fa fa-calendar'></i></a>
+-->
+
+  <!-- jQueryの読み込み -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!-- デートピッカー用プラグインの読み込み -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.4.3/flatpickr.min.js"></script>
+
+ <!-- デートピッカーの日本語化用JSの読み込み -->
+ <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+
+ <!-- flatpickr用ボタンの読み込み -->
+ <div class="flatpickr input-group" data-id="strap">
+  <input type="text" placeholder="Select Date.." data-input><!-- inputは必須です-->
+  <button type="button" title="toggle" data-toggle>
+    <i class="material-icons">date_range</i>
+  </button>
+  <button type="button" title="clear" data-clear>
+    <i class="material-icons">clear</i>
+  </button>
+</div>
+
+  <!-- 自作JavaScriptの読み込み -->
+  <script src="js03_04.js"></script>
+</body>
+</html>
